@@ -1,7 +1,7 @@
 package main
 
 import (
-	"../controllers" 
+	"gilab.com/pramaticreviews/golang-gin-poc/controllers" 
 	"github.com/gin-gonic/gin"
 )
 
@@ -12,9 +12,9 @@ func setupRouter() *gin.Engine {
 	client := r.Group("/api")
 	{
 		client.GET("/story/:id", controllers.Read)
-		client.POST("/story/create", controllers.Create)
-		client.PATCH("/story/update/:id", controllers.Update)
-		client.DELETE("/story/:id", controllers.Delete)
+		//client.POST("/story/create", controllers.Create)
+		//client.PATCH("/story/update/:id", controllers.Update)
+		//client.DELETE("/story/:id", controllers.Delete)
 	}
 
 	return r

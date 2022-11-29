@@ -1,7 +1,7 @@
 package controllers
 
 import (
-	"../database"
+	"gilab.com/pramaticreviews/golang-gin-poc/database"
 	"github.com/gin-gonic/gin"
 )
 
